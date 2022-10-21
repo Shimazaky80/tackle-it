@@ -1,2 +1,2 @@
-# tackle-it
+# Tackle It
 Fitness Studio Landing Page
