@@ -17,6 +17,87 @@ body {
     border: 2px solid red; /* debugging*/
 }
 
+body, a {
+    color: #f9faf8;
+    font-size: 18px;
+}
+
+.hero {
+    outline: 2px solid blue;
+}
+
+.hero, footer {
+    background-color: #1f2937;
+}
+
+.header {
+    max-width: 70%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    outline: 1px solid yellowgreen; /* debugging */
+}
+
+.hero a {
+    text-decoration: none;
+}
+
+.header .logo {
+    margin-right: auto;
+    font-size: 24px;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+}
+
+.hero-wrapper {
+    max-width: 100%;
+    max-height: 800px;
+    margin-top: 60px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.hero-content {
+    outline: 1px solid brown; /* debugging */
+    margin-right: auto;
+    padding-right: 50px;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 10px;
+    flex: 1;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    font-weight: bolder;
+}
+
+.hero-content a {
+    margin: 8px 0;
+}
+
+.hero-image {
+    margin-bottom: 60px;
+    width: 400px;
+}
+
+.hero-image img {
+    display: block;
+    width: 100%;
+}
+
+
+
+
+/*
+
 header, .hero, footer {
     background-color: #1f2937;
     color: #e5e7eb;
@@ -32,7 +113,7 @@ header, .hero, footer {
     flex-wrap: wrap;
     gap: 20px;
     align-items: center;
-    border: 1px solid blue; /* debugging */
+    border: 1px solid blue;
 }
 
 .navheader .logo {
@@ -50,7 +131,7 @@ nav {
     gap: 20px;
 }
 
-/*********************** HERO AREA *****************************/
+********************** HERO AREA ****************
 .hero-container {
     display: flex;
     justify-content: space-between;
@@ -103,3 +184,5 @@ nav {
 .hero {
     height: 1200px;
 }
+
+*/
