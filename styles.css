@@ -156,7 +156,6 @@ main {
 .cards span {
     display: inline-block;
     max-width: 160px;
-    /* border: none; */
     font-weight: bolder;
     color: #3882f6;
     background-color: #1f2937;
