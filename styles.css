@@ -162,3 +162,34 @@ main {
     padding: 5px 8px;
     margin: 5px 0;
 }
+
+.quote-section {
+    background-color: #e5e7eb;
+}
+
+.quote-section figure {
+    outline: 1px solid black; /* debugging */
+    max-width: 1000px;
+    margin: auto;
+    padding: 80px;
+}
+
+figure {
+    margin: 80px;
+}
+
+.quote-section figure p {
+    color: #1f2937;
+    font-size: 36px;
+    font-style: italic;
+    font-weight: lighter;
+}
+
+figcaption {
+    color: #1f2937;
+    font-size: 36px;
+    margin-top: 20px;
+    font-weight: bolder;
+    display: flex;
+    justify-content: flex-end;
+}
