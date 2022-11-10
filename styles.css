@@ -34,15 +34,9 @@ body, a {
     padding-top: 10px;
     padding-bottom: 80px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-}
-
-.header .logo {
-    margin-right: auto;
-    display: flex;
-    align-items: center;
 }
 
 .logo a {
@@ -60,13 +54,14 @@ nav {
     margin-top: 60px;
     width: 100%;
     display: flex;
+    justify-content: space-between;
     flex-flow: row wrap;
 }
 
 .hero-content {
-    width: 480px;
+    width: 500px;
     margin-right: auto;
-    padding-right: 40px;
+    /* padding-right: 40px; */
     letter-spacing: 0.03rem;
     display: flex;
     flex-flow: column wrap;
@@ -93,6 +88,7 @@ nav {
     text-align: center;
     border-radius: 5px;
     margin-bottom: 20px;
+    margin-top: 10px;
 }
 
 .hero-image {
@@ -101,6 +97,7 @@ nav {
 
 .hero-image img {
     width: 100%;
+    border-radius: 3px;
 }
 
 /* styling may content */
@@ -131,6 +128,7 @@ main {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    margin-bottom: 50px;
 }
 
 .cards div {
@@ -192,4 +190,66 @@ figcaption {
     font-weight: bolder;
     display: flex;
     justify-content: flex-end;
+}
+
+.action-section {
+    background-color: #3882f6;
+    max-width: 1000px;
+    margin: 80px auto;
+    border-radius: 5px;
+}
+
+.action-section .action-call {
+    outline: 1px solid red;
+    max-width: 850px;
+    margin: auto;
+    padding: 60px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    flex: 1;
+}
+
+.action-section  * {
+    color: white;
+    font-size: 18px;
+    letter-spacing: 0.6px;
+    line-height: 20px;
+}
+
+.action-button a {
+    display: block;
+    border: 2px solid white;
+    border-radius: 5px;
+    padding: 5px 8px;
+    width: 120px;
+    text-align: center;
+}
+
+footer {
+    min-height: 100px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+@media (max-width: 600px) {
+    .header,
+    .hero-wrapper  {
+      -webkit-flex-direction: column;
+      flex-direction: column;
+      /* justify-content: center; */
+      align-items: center;
+    }
+
+    .hero-content, .hero-image  {
+        max-width: 100%;
+      -webkit-flex-direction: column;
+      flex-direction: column;
+      align-items: center;
+    }
+
 }
