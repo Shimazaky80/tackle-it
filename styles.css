@@ -204,6 +204,9 @@ header, footer, .hero-wrapper {
         margin-top: 20px;
         margin-bottom: 15px;
     }
+    .action-call {
+      text-align: center;
+    }
     .action-button {
         margin: auto;
     }
